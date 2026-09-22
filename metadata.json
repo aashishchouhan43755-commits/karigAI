@@ -1,0 +1,7 @@
+{
+  "name": "karigAi - Artisan AI Studio & Marketplace",
+  "description": "Smart AI Studio, multilingual voice cataloging, dynamic fair pricing, and GI heritage marketplace empowering marginalized Indian artisans.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

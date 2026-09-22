@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Copy dependency manifests
 COPY package*.json ./
-RUN npm ci
+RUN npm install
 
 # Copy application sources
 COPY . .
@@ -21,7 +21,7 @@ ENV NODE_ENV=production
 ENV PORT=3000
 
 COPY package*.json ./
-RUN npm ci --omit=dev
+RUN npm install --omit=dev
 
 COPY --from=builder /app/dist ./dist
 
